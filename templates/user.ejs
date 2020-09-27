@@ -1,0 +1,50 @@
+<style>
+  .container {
+    margin: 5em auto;
+    max-width: 600px;
+  }
+  .box {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    text-align: left;
+    border-radius: 5px;
+  }
+
+  .username {
+    flex: 1;
+    align-items: center;
+  }
+  .bio {
+    color: #999;
+    font-size: 12px;
+  }
+
+  .photo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .loginBtn {
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #5a3;
+  }
+  .foot {
+    text-align: right
+  }
+</style>
+<div class='container'>
+  <div class='box'>
+    <img src="<%=user.avatar_url%>" class='photo' valign='middle' />
+    <div class='username'>
+      <%-user.username%> - <span class='bio'><%-user.bio%></span>
+    </div>
+  </div>
+  <div class='foot'>
+    <a href="/logout" style='color: #999; margin: 10px; font-size: 14px'>登出或切换账号</a>
+  </div>
+</div>

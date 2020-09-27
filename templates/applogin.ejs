@@ -1,0 +1,20 @@
+<% include inc/header.ejs %>
+<div style='color: #aaa; width: 300px; font-size: 16px; text-align: center; margin: 60px auto'>
+  跳转中...
+</div>
+<script type="text/javascript" defer>
+  setTimeout(function() {
+    const message = JSON.stringify({
+      command: 'setToken',
+      payload: {
+        token: "<%-token%>"
+      }
+    })
+    try {
+      window.postMessage(message)
+    } catch(e) {
+      alert(e.message)
+    }
+  }, 100)
+</script>
+<% include inc/footer.ejs %>

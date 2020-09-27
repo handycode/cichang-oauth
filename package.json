@@ -1,0 +1,28 @@
+{
+  "name": "oauth",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "handy",
+  "license": "MIT",
+  "scripts": {
+    "start": "STAGE=production nodemon ./index.js --exec babel-node",
+    "dev": "STAGE=development nodemon ./index.js --exec babel-node"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "express": "4.15.3",
+    "lodash": "4.17.4",
+    "socket.io": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint-plugin-babel": "^4.1.1",
+    "nodemon": "^1.11.0"
+  }
+}

@@ -1,0 +1,45 @@
+<% include inc/header.ejs %>
+<style>
+  .loginContainer {
+    margin: 10px auto;
+    min-width: 200px;
+    max-width: 400px;
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .gitlabLoginBtn {
+    background: #262f3d;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 20px;
+    line-height: 48px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    max-width: 80%;
+    margin: 40px auto;
+  }
+  .gitlabLoginBtn:hover, .gitlabLoginBtn:active {
+    background: #333;
+    color: #eee;
+  }
+  .gitlabLoginBtn img {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+</style>
+<div class='loginContainer'>
+  <img src='/images/gitlab.svg' alt='' width='100' />
+  <a class="gitlabLoginBtn" href="<%-loginUrl%>">
+    <img src='/images/gitlab.svg' width='24' height='24' /> 通过 cichang8.com 登录
+  </a>
+</div>
+<% include inc/footer.ejs %>

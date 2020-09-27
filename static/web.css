@@ -1,0 +1,16 @@
+html,
+body {
+  font-family: PingFang SC, PingFangSC-Regular, 'Microsoft YaHei', 'Helvetica Neue', Helvetica, 'Hiragino Sans GB',
+    sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #666;
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+a:hover {
+  color: #5b6;
+}
